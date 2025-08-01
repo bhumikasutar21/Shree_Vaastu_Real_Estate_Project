@@ -183,7 +183,7 @@ body {
 
 .about-header {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .about-header h2 {
@@ -203,14 +203,18 @@ body {
 
 .about-grid {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  gap: 2.5rem;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
 }
 
 .about-image-wrapper {
-  flex: 1 1 50%;
-  border-radius: 16px;
+  flex: 0 0 auto;
+  width: 400px;
+  height: 350px;
+  border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
   position: relative;
@@ -218,7 +222,7 @@ body {
 }
 
 .about-image-wrapper:hover {
-  transform: scale(1.02);
+  transform: scale(1.05);
 }
 
 .about-image-wrapper img {
@@ -228,17 +232,31 @@ body {
   display: block;
 }
 
-.image-overlay {
+.image-label {
   position: absolute;
-  inset: 0;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.35), transparent);
+  bottom: 8px;
+  left: 8px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.arrow-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: #444;
+  height: 200px;
 }
 
 .about-content {
-  flex: 1 1 45%;
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
+  text-align: center;
+  max-width: 850px;
+  margin: auto;
   font-size: 1.05rem;
   line-height: 1.8;
   color: #444;

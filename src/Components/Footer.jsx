@@ -58,7 +58,7 @@ const Footer = ({ scrollToSection }) => {
           </div>
           <div className="contact-item">
             <FaPhone className="icon small" style={{ color: "#d87d4a" }} />
-            <span> +91-9876543210</span>
+            <span> +91-98927 72233</span>
           </div>
           <div className="contact-item">
             <SiGmail className="icon small" style={{ color: "#d87d4a" }} />

@@ -1,33 +1,7 @@
 import React from "react";
-// import { FiMapPin } from "react-icons/fi";
-// import { FaPhone } from "react-icons/fa6";
-// import { SiGmail } from "react-icons/si";
-// import { FaClock } from "react-icons/fa";
-import aboutImage from "../assets/building-about.jpg";
-
-// const contactInfo = [
-//   {
-//     icon: <FiMapPin size={24} />,
-//     title: "Office Address",
-//     content:
-//       "Shree Vastu, Temghar Village, Kalyan-Bhiwandi Road, Temghar, Bhiwandi – 421302",
-//   },
-//   {
-//     icon: <FaPhone size={24} />,
-//     title: "Phone",
-//     content: "+91-98217 72233",
-//   },
-//   {
-//     icon: <SiGmail size={24} />,
-//     title: "Email",
-//     content: "paintnrepair@gmail.com",
-//   },
-//   {
-//     icon: <FaClock size={24} />,
-//     title: "Working Hours",
-//     content: "Mon–Sat: 9 AM – 6 PM",
-//   },
-// ];
+import beforeImage from "../assets/Build1.jpg";
+import afterImage from "../assets/building-about.jpg";
+import { FaArrowRight } from "react-icons/fa6";
 
 const AboutSection = () => {
   return (
@@ -43,38 +17,36 @@ const AboutSection = () => {
         </div>
 
         <div className="about-grid">
-          {/* Left: Image */}
+          {/* Before Image */}
           <div className="about-image-wrapper">
-            <img src={aboutImage} alt="Construction Office" />
-            <div className="image-overlay" />
+            <img src={beforeImage} alt="Before Construction" />
+            <div className="image-label">Before</div>
           </div>
 
-          {/* Right: Content */}
-          <div className="about-content">
-            <p>
-              At Shree Vastu, we maintain a comprehensive project management
-              office that oversees every aspect of construction. Our experienced
-              team ensures that each project meets the highest standards of
-              quality, safety, and timelines.
-            </p>
-            <p className="muted">
-              From initial planning to final delivery, our office coordinates
-              with architects, engineers, contractors, and clients to bring
-              architectural visions to life with precision and excellence.
-            </p>
-
-            {/* <div className="contact-grid">
-              {contactInfo.map((info, i) => (
-                <div className="contact-card" key={i}>
-                  <div className="icon">{info.icon}</div>
-                  <div className="contact-details">
-                    <h4>{info.title}</h4>
-                    <p>{info.content}</p>
-                  </div>
-                </div>
-              ))}
-            </div> */}
+          {/* Arrow Between */}
+          <div className="arrow-wrapper">
+            <FaArrowRight style={{ color: "grey" }} />
           </div>
+
+          {/* After Image */}
+          <div className="about-image-wrapper">
+            <img src={afterImage} alt="After Construction" />
+            <div className="image-label">After</div>
+          </div>
+        </div>
+
+        <div className="about-content">
+          <p>
+            At Shree Vastu, we maintain a comprehensive project management
+            office that oversees every aspect of construction. Our experienced
+            team ensures that each project meets the highest standards of
+            quality, safety, and timelines.
+          </p>
+          <p className="muted">
+            From initial planning to final delivery, our office coordinates with
+            architects, engineers, contractors, and clients to bring
+            architectural visions to life with precision and excellence.
+          </p>
         </div>
       </div>
     </section>

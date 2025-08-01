@@ -6,7 +6,7 @@ const ContactSection = () => {
     const formData = new FormData(event.target);
 
     // Add your Web3Forms access key
-    formData.append("access_key", "30dce94f-caed-4842-bbff-cd6674985bc4");
+    formData.append("access_key", "814b3682-9eba-426a-af8b-3839fbb4aeb4");
 
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
@@ -69,7 +69,7 @@ const ContactSection = () => {
               <div className="icon">📞</div>
               <div>
                 <h4>Phone</h4>
-                <p>+91-9876543210</p>
+                <p>+91-98927 72233</p>
               </div>
             </div>
             <div className="contact-card">
@@ -83,8 +83,10 @@ const ContactSection = () => {
               <div className="icon">🕒</div>
               <div>
                 <h4>Working Hours</h4>
-                <p>Mon–Sat: 9 AM – 6 PM</p>
-                <p className="sub-text">Sunday: Closed</p>
+                <p>Mon–Sun: 9 AM – 6 PM</p>
+                <p className="sub-text">
+                  We provide Services on Holidays as well.
+                </p>
               </div>
             </div>
           </div>
