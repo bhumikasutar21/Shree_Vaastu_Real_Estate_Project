@@ -3,6 +3,7 @@ import { BsBuildingsFill } from "react-icons/bs";
 import { FiMapPin } from "react-icons/fi";
 import { FaPhone } from "react-icons/fa6";
 import { SiGmail } from "react-icons/si";
+import "./Footer.css";
 
 const Footer = ({ scrollToSection }) => {
   const currentYear = new Date().getFullYear();

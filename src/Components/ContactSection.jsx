@@ -1,4 +1,5 @@
 import React from "react";
+import "./ContactSection.css";
 
 const ContactSection = () => {
   const onSubmit = async (event) => {

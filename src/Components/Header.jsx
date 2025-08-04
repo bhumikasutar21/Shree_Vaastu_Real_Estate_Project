@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 // import { Link } from "react-router-dom";
 import { BsBuildingsFill } from "react-icons/bs";
 import { FaBars } from "react-icons/fa6";
-function Header({ activeSection, scrollToSection }) {
+import "./Header.css";
+function Header({ activeSection, scrollToSection, isMenuOpen, setIsMenuOpen }) {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
     { id: "home", label: "Home" },

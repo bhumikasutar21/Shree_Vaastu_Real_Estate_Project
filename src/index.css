@@ -94,16 +94,73 @@ body {
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 24px;
+  }
+
+  .section-title {
+    font-size: 2.2rem;
+  }
+}
+
 @media (max-width: 768px) {
   .section {
     padding: 60px 0;
+    min-height: auto;
   }
 
   .section-title {
     font-size: 2rem;
+    margin-bottom: 2rem;
   }
 
   .container {
-    padding: 0 15px;
+    padding: 0 16px;
   }
+
+  .btn {
+    padding: 14px 28px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 40px 0;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .container {
+    padding: 0 12px;
+  }
+
+  .btn {
+    padding: 12px 24px;
+    font-size: 0.95rem;
+    border-radius: 20px;
+  }
+}
+
+/* Additional responsive utilities */
+@media (max-width: 768px) {
+  .text-center-mobile {
+    text-align: center;
+  }
+
+  .hide-mobile {
+    display: none;
+  }
+
+  .show-mobile {
+    display: block;
+  }
+}
+
+.show-mobile {
+  display: none;
 }

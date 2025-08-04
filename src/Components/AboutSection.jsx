@@ -2,6 +2,7 @@ import React from "react";
 import beforeImage from "../assets/Build1.jpg";
 import afterImage from "../assets/building-about.jpg";
 import { FaArrowRight } from "react-icons/fa6";
+import "./AboutSection.css";
 
 const AboutSection = () => {
   return (

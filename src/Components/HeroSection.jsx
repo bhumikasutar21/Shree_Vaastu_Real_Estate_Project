@@ -1,6 +1,6 @@
 import React from "react";
 import heroImage from "../assets/building-hero.jpg"; // Update path as needed
-
+import "./HeroSection.css";
 function HeroSection({ scrollToSection }) {
   return (
     <section id="home" className="hero-section">
